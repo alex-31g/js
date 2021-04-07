@@ -1,2 +1,2 @@
-## mutable и immutable структуры данных. Метод Object.assign()
-`mutable_immutable_object_assign.js`
+- Мутации, простые и составные типы данных
+- Предотвращение мутаций
