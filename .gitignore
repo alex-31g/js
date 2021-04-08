@@ -4,7 +4,9 @@
 /dist
 /tmp
 /out-tsc
-/info
+
+# folder for testing and trash
+/test
 
 # dependencies
 /node_modules
