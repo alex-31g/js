@@ -74,18 +74,6 @@ console.log(y);
 
 // 7 ==============================
 
-let obj = {};
-let data = { arg: 1 };
-
-obj.x = data;
-obj.y = data;
-
-obj.y.arg = 100;
-
-console.log(obj);
-
-// 8 ==============================
-
 let num = 5;
 
 function addTwo(num) {
@@ -95,7 +83,7 @@ function addTwo(num) {
 addTwo(num);
 console.log(num); 
 
-// 9 ==============================
+// 8 ==============================
 
 let obj = { key: 5 };
 
@@ -105,7 +93,19 @@ function addTwo(obj) {
 }
 
 addTwo(obj);
-console.log(obj); // { key: 7 }
+console.log(obj);
+
+// 9 ==============================
+
+let obj = {};
+let data = { arg: 1 };
+
+obj.x = data;
+obj.y = data;
+
+obj.y.arg = 100;
+
+console.log(obj);
 
 // 10 ==============================
 
