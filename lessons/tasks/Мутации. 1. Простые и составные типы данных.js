@@ -134,3 +134,20 @@ function foo(arg) {
 
 foo(1);
 foo(2);
+
+// 11 ==============================
+
+let start = null;
+let end = null;
+
+for (let i = 0; i < 3; i++) {
+	let node = { value: i, next: null }
+
+	if (end) end.next = node;
+
+	end = node;
+	
+	if (!start) start = node ;
+	
+	console.log(start);
+}
