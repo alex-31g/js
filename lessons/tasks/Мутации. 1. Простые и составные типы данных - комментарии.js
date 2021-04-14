@@ -91,4 +91,28 @@ function addTwo(obj) {
 addTwo(obj);
 console.log(obj); // { key: 7 }
 
-// ========================
+// 11 ========================
+
+let node1 = { val: { key0: 1 } }  
+
+let a = node1
+
+console.log(node1) // { val: { key0: 1 } } 
+
+let node2 = { key1: 2 }
+a.val = node2 
+a = node2 // <- magic starts: a = { key1: 2 }
+
+console.log(node1) // { val: { key1: 2 } } 
+
+let node3 = { key2: 3 }
+a.val = node3 // поскольку a = { key1: 2 }, то свойство val будет добавлено в a = { key1: 2, val: { key2: 3 } }
+a = node3
+
+console.log(node1) // { val: { key1: 2, val: { key2: 3 } } } 
+
+let node4 = { key3: 4 }
+a.val = node4 // поскольку a = { key2: 3 }, то свойство val будет добавлено в a = { key2: 3, val: { key3: 4 } }
+a = node4
+
+console.log(node1) // { val: { key1: 2, val: { key2: 3, val: { key3: 4 } } } } 

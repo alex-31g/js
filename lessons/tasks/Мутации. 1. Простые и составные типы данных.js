@@ -137,6 +137,32 @@ foo(2);
 
 // 11 ==============================
 
+let node1 = { val: { key0: 1 } }  
+
+let a = node1
+
+console.log(node1) 
+
+let node2 = { key1: 2 }
+a.val = node2 
+a = node2 
+
+console.log(node1)  
+
+let node3 = { key2: 3 }
+a.val = node3 
+a = node3
+
+console.log(node1)  
+
+let node4 = { key3: 4 }
+a.val = node4 
+a = node4
+
+console.log(node1) 
+
+// 12 ==============================
+
 let start = null;
 let end = null;
 
